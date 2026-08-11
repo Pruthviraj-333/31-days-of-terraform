@@ -330,41 +330,61 @@ Expected output will show the installed Terraform version.
 
 ## Screenshots
 
-### Terraform Installation
+### Terraform Setup & Version Verification
 
-*Add screenshot here.*
+![Terraform Setup & Version Verification](./screenshots/terraform-setup.jpg)
 
-```text
-![Terraform Installation](./screenshots/terraform-installation.png)
+```powershell
+PS C:\WINDOWS\System32> tf --version
+Terraform v1.15.8
+on windows_amd64
 ```
 
-### Terraform Version
-
-*Add screenshot here.*
-
-```text
-![Terraform Version](./screenshots/terraform-version.png)
-```
 
 ---
 
 ## Diagrams
 
-### Terraform Workflow
+### Terraform Core Workflow
 
-*Add your Terraform workflow diagram here.*
-
-```text
-![Terraform Workflow](./diagrams/terraform-workflow.png)
+```mermaid
+graph TD
+    A[📄 Terraform Configuration<br/>main.tf] -->|1. terraform init| B[📦 Download Providers & Modules]
+    B -->|2. terraform validate| C[✅ Syntax & Schema Check]
+    C -->|3. terraform plan| D[🔍 Preview Execution Plan<br/>+ Create / ~ Modify / - Destroy]
+    D -->|4. terraform apply| E[🚀 Provision Infrastructure]
+    E --> F[(☁️ Cloud Provider APIs<br/>AWS / Azure / GCP)]
+    
+    style A fill:#4B2E83,stroke:#333,stroke-width:2px,color:#fff
+    style E fill:#008080,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#FF9900,stroke:#333,stroke-width:2px,color:#fff
 ```
 
-### Infrastructure as Code
+### Infrastructure as Code (IaC) Architecture
 
-*Add your IaC diagram here.*
+```mermaid
+graph LR
+    subgraph Traditional Approach [❌ Traditional Manual Approach]
+        direction TB
+        Admin[👨‍💻 Admin / Engineer] -->|Manual Click & Configuration| WebConsole[🌐 AWS Web Console]
+        WebConsole --> Server1[🖥 Server 1]
+        WebConsole --> Server2[🖥 Server 2]
+    end
 
-```text
-![Infrastructure as Code](./diagrams/infrastructure-as-code.png)
+    subgraph IaC Approach [✅ Infrastructure as Code Approach]
+        direction TB
+        Dev[👨‍💻 Engineer] -->|Version Controlled HCL Code| Git Repo[📁 Git Repository]
+        Git Repo -->|terraform apply| TFEngine[⚡ Terraform Engine]
+        TFEngine -->|Automated API Calls| AWSCloud[☁️ AWS Infrastructure]
+        AWSCloud --> VPC[🌐 VPC Network]
+        AWSCloud --> EC2[🖥 EC2 Instances]
+        AWSCloud --> DB[🗄 RDS Databases]
+    end
+
+    style Traditional Approach fill:#fff0f0,stroke:#d9534f,stroke-width:2px
+    style IaC Approach fill:#f0fff0,stroke:#5cb85c,stroke-width:2px
 ```
+
 
 ---
 
