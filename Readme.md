@@ -65,7 +65,7 @@ The focus is on **learning by doing** rather than only reading documentation.
 ## Repository Structure
 
 ```text
-31-days-of-terraform/
+31-days-of-terraform-aws/
 │
 ├── Readme.md
 │
