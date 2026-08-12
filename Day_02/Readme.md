@@ -276,11 +276,11 @@ provider "registry.terraform.io/hashicorp/aws" {
 
 ```mermaid
 graph TD
-    User["User Configuration (main.tf)"] -->|1. Runs terraform init/plan| Core["Terraform Core Binary (v1.15.8)"]
-    Core -->|2. Reads required_providers| Registry["Terraform Registry (registry.terraform.io)"]
-    Registry -->|3. Downloads Plugin| Disk[".terraform/providers/ (hashicorp/aws v5.100.0)"]
-    Core -->|4. RPC Protocol| Disk
-    Disk -->|5. API Request (HTTPS)| AWS["AWS Cloud API Endpoints"]
+    User["User Configuration main.tf"] -->|"1. Runs terraform init or plan"| Core["Terraform Core Binary"]
+    Core -->|"2. Reads required_providers"| Registry["Terraform Registry"]
+    Registry -->|"3. Downloads Plugin"| Disk[".terraform/providers/ directory"]
+    Core -->|"4. RPC Protocol"| Disk
+    Disk -->|"5. API Requests via HTTPS"| AWS["AWS Cloud API Endpoints"]
 
     style Core fill:#4B2E83,stroke:#333,stroke-width:2px,color:#fff
     style Disk fill:#008080,stroke:#333,stroke-width:2px,color:#fff
