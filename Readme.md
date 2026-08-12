@@ -29,7 +29,7 @@ The focus is on **learning by doing** rather than only reading documentation.
 | Day | Topic | Status | Link |
 | --- | ----- | ------ | ---- |
 | Day 01 | Introduction to Terraform | Completed | [View Day 01](./Day_01/Readme.md) |
-| Day 02 | Terraform Configuration Language | Not Started | - |
+| Day 02 | Terraform Providers | Completed | [View Day 02](./Day_02/Readme.md) |
 | Day 03 | Providers | Not Started | - |
 | Day 04 | Resources | Not Started | - |
 | Day 05 | Variables | Not Started | - |
@@ -159,10 +159,10 @@ The goal is not just to complete 31 days, but to build practical knowledge that 
 
 **Challenge:** 31 Days of Terraform
 
-**Current Status:** Day 01 Completed (`1 / 31`)
+**Current Status:** Day 02 Completed (`2 / 31`)
 
 ```text
-[#--------------------------------] 1 / 31 Days Completed
+[##------------------------------] 2 / 31 Days Completed
 ```
 
 ---
