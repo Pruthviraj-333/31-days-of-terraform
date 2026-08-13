@@ -1,0 +1,4 @@
+# Sample variable definitions for Day 03 S3 Bucket setup
+aws_region    = "us-east-1"
+environment   = "dev"
+bucket_prefix = "my-tf-s3-bucket"
