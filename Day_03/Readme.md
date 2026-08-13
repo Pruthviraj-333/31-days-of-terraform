@@ -105,9 +105,9 @@ aws sts get-caller-identity
 **Output:**
 ```json
 {
-    "UserId": "130063747569",
-    "Account": "130063747569",
-    "Arn": "arn:aws:iam::130063747569:root"
+    "UserId": "AIDAXXXXXXXXXXXXXXXXX",
+    "Account": "123456789012",
+    "Arn": "arn:aws:iam::123456789012:user/dev-user"
 }
 ```
 
@@ -348,64 +348,18 @@ aws s3 ls
 
 ## Command Line Execution Outputs
 
-### `aws sts get-caller-identity`
-```json
-{
-    "UserId": "130063747569",
-    "Account": "130063747569",
-    "Arn": "arn:aws:iam::130063747569:root"
-}
-```
+
 
 ### `terraform init`
-```text
-Initializing the backend...
-Initializing provider plugins...
-- Finding hashicorp/aws versions matching "~> 5.0"...
-- Finding hashicorp/random versions matching "~> 3.5"...
-- Installing hashicorp/aws v5.100.0...
-- Installed hashicorp/aws v5.100.0 (signed by HashiCorp)
-- Installing hashicorp/random v3.9.0...
-- Installed hashicorp/random v3.9.0 (signed by HashiCorp)
 
-Terraform has created a lock file .terraform.lock.hcl to record the provider selections.
-Terraform has been successfully initialized!
-```
 
 ### `terraform plan`
-```text
-Plan: 5 to add, 0 to change, 0 to destroy.
 
-Changes to Outputs:
-  + s3_bucket_arn         = (known after apply)
-  + s3_bucket_domain_name = (known after apply)
-  + s3_bucket_name        = (known after apply)
-  + s3_bucket_region      = (known after apply)
-```
 
 ### `terraform apply`
-```text
-random_id.bucket_suffix: Creation complete after 0s [id=Jrja2w]
-aws_s3_bucket.demo_bucket: Creating...
-aws_s3_bucket.demo_bucket: Creation complete after 7s [id=my-tf-s3-bucket-26b8dadb]
-aws_s3_bucket_public_access_block.demo_bucket_public_access: Creation complete after 1s [id=my-tf-s3-bucket-26b8dadb]
-aws_s3_bucket_server_side_encryption_configuration.demo_bucket_encryption: Creation complete after 1s [id=my-tf-s3-bucket-26b8dadb]
-aws_s3_bucket_versioning.demo_bucket_versioning: Creation complete after 2s [id=my-tf-s3-bucket-26b8dadb]
-
-Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
-
-Outputs:
-
-s3_bucket_arn = "arn:aws:s3:::my-tf-s3-bucket-26b8dadb"
-s3_bucket_domain_name = "my-tf-s3-bucket-26b8dadb.s3.amazonaws.com"
-s3_bucket_name = "my-tf-s3-bucket-26b8dadb"
-s3_bucket_region = "us-east-1"
-```
 
 ### AWS CLI Verification (`aws s3 ls`)
-```text
-2026-08-13 23:36:04 my-tf-s3-bucket-26b8dadb
-```
+
 
 ---
 
