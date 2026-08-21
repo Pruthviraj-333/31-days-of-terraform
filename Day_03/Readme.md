@@ -346,20 +346,35 @@ aws s3 ls
 
 ---
 
-## Command Line Execution Outputs
+## Screenshots
 
+### 1. Architectural Diagram: Terraform S3 Bucket Provisioning
+![Create AWS S3 Bucket using Terraform](./screenshots/ChatGPT%20Image%20Aug%2013,%202026,%2011_28_43%20PM.png)
 
+---
 
-### `terraform init`
+### 2. AWS Authentication Verification (`aws sts get-caller-identity`)
+![AWS STS Authentication Verification](./screenshots/Screenshot%202026-08-21%20214915.png)
 
+---
 
-### `terraform plan`
+### 3. Terraform Initialization, Validation & Execution Plan (`terraform init`, `validate`, `plan`)
+![Terraform Init, Validate, and Plan](./screenshots/Screenshot%202026-08-21%20215035.png)
 
+---
 
-### `terraform apply`
+### 4. Terraform Apply Execution & Output Variables (`terraform apply`)
+![Terraform Apply Complete with Outputs](./screenshots/Screenshot%202026-08-21%20215343.png)
 
-### AWS CLI Verification (`aws s3 ls`)
+---
 
+### 5. AWS CLI S3 Bucket Verification (`aws s3 ls`)
+![AWS CLI S3 Verification](./screenshots/Screenshot%202026-08-21%20215504.png)
+
+---
+
+### 6. AWS Management Console S3 Bucket Verification
+![AWS Console S3 Bucket View](./screenshots/Screenshot%202026-08-21%20215550.png)
 
 ---
 
