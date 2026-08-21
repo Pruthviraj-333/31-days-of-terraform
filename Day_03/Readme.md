@@ -349,52 +349,52 @@ aws s3 ls
 ## Screenshots
 
 ### 1. Architectural Diagram: Create AWS S3 Bucket using Terraform
-![Create AWS S3 Bucket using Terraform](./screenshots/ChatGPT%20Image%20Aug%2013,%202026,%2011_28_43%20PM.png)
+![Create AWS S3 Bucket using Terraform](./screenshots/01-s3-terraform-architecture-diagram.png)
 
 ---
 
 ### 2. AWS Authentication Verification (`aws sts get-caller-identity`)
-![AWS STS Authentication Verification](./screenshots/Screenshot%202026-08-21%20214915.png)
+![AWS STS Authentication Verification](./screenshots/02-aws-sts-caller-identity.png)
 
 ---
 
 ### 3. Terraform Initialization, Validation & Plan Initiation (`terraform init`, `validate`, `plan`)
-![Terraform Init, Validate, and Plan Initiation](./screenshots/Screenshot%202026-08-21%20215035.png)
+![Terraform Init, Validate, and Plan Initiation](./screenshots/03-terraform-init-validate-plan.png)
 
 ---
 
 ### 4. Terraform Execution Plan Resource Details
-![Terraform Plan Resource Details](./screenshots/Screenshot%202026-08-21%20215056.png)
+![Terraform Plan Resource Details](./screenshots/04-terraform-plan-resource-details.png)
 
 ---
 
 ### 5. Terraform Execution Plan Summary & Outputs Preview
-![Terraform Plan Summary & Outputs](./screenshots/Screenshot%202026-08-21%20215104.png)
+![Terraform Plan Summary & Outputs](./screenshots/05-terraform-plan-summary-outputs.png)
 
 ---
 
 ### 6. Terraform Apply Command Execution (`terraform apply`)
-![Terraform Apply Initiation](./screenshots/Screenshot%202026-08-21%20215302.png)
+![Terraform Apply Initiation](./screenshots/06-terraform-apply-initiation.png)
 
 ---
 
 ### 7. Terraform Apply Resource Construction
-![Terraform Apply Resource Construction](./screenshots/Screenshot%202026-08-21%20215318.png)
+![Terraform Apply Resource Construction](./screenshots/07-terraform-apply-resource-creation.png)
 
 ---
 
 ### 8. Terraform Apply Completion & Deployed Outputs
-![Terraform Apply Complete with Outputs](./screenshots/Screenshot%202026-08-21%20215343.png)
+![Terraform Apply Complete with Outputs](./screenshots/08-terraform-apply-complete-outputs.png)
 
 ---
 
 ### 9. AWS CLI S3 Bucket Verification (`aws s3 ls`)
-![AWS CLI S3 Verification](./screenshots/Screenshot%202026-08-21%20215504.png)
+![AWS CLI S3 Verification](./screenshots/09-aws-cli-s3-verification.png)
 
 ---
 
 ### 10. AWS Management Console S3 Bucket Verification
-![AWS Console S3 Bucket View](./screenshots/Screenshot%202026-08-21%20215550.png)
+![AWS Console S3 Bucket View](./screenshots/10-aws-console-s3-verification.png)
 
 ---
 
